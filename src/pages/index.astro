@@ -1,17 +1,91 @@
----
-
----
-
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-		<h1>我的 Astro 站点</h1>
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>My Modern Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 2rem;
+        }
+        .post h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .post p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Modern Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <section class="post">
+            <h2>Welcome to My Blog</h2>
+            <p>
+                This is a modern blog built with Astro! Stay tuned for interesting posts about web development, technology, and much more.
+            </p>
+        </section>
+        <section class="post">
+            <h2>Latest Post</h2>
+            <p>
+                <strong>Title:</strong> Introduction to Modern Web Development<br />
+                <strong>Date:</strong> November 23, 2024<br />
+                Learn how modern tools and frameworks like Astro, React, and Vue can simplify your development process and build amazing websites.
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 ZhenQuan Li. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
+
